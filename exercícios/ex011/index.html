@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 700px)" srcset="imagens/foto-p.png" type="image/png">
+        <!-- media=se for menor que;  srcset=carregar tal imagem;  type=o que é/formato; -->
+        <source media="(max-width: 1024px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto flexível">
+    </picture>
+    <br>
+    <picture>
+        <source media="(max-width: 700px)" srcset="teste/foto-300-cortada.png" type="image/png">
+        <source media="(max-width: 1024px)" srcset="teste/foto-700-cortada.png" type="image/png">
+        <img src="teste/foto-1000.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/ukulele-beach.mp3" type="audio/mpeg">
+        <source src="midia/ukulele-beach.mp3" type="audio/ogg">
+        <source src="midia/ukulele-beach.mp3" type="audio/wav">
+        <!-- source src=arquivo
+        type=formato do arquivo que vai ser reproduzido -->
+        <p>Infelizmente seu navegador não é compatível com o arquivo, para baixar e ouvir o seu dispositivo, <a href="midia/ukulele-beach.mp3" download="ukulele-beach.mp3" type="audio/mpeg">clique aqui</a></p>
+        <!-- href=caminho do arquivo
+        dowload=nome do arquivo que precisa baixar
+        type=formato do arquivo -->
+    </audio>
+</body>
+</html>
+
+
+
+
+
+
